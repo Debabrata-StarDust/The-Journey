@@ -1,0 +1,133 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Tapestry', cursive;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgb(rgba(153, 149, 149, 0.637), rgb(170, 211, 170), blue);
+    color: rgb(253, 253, 253);
+    text-shadow: 2px 1px 5px rgba(51, 168, 51, 0.829);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding-right: 5%;
+    padding-left:5%;
+    text-decoration: none;
+   /* text-align: none;*/
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .manu a {
+    width:25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+}
+main{
+    width:100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 2px 1px 5px rgba(51, 168, 51, 0.829);
+    text-transform:uppercase ;
+}
+section h1{
+    margin: 30px 0px 20px 0px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px rgba(51, 168, 51, 0.829);
+}
+section {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+  /*  transition: all.5s, ease;*/
+}
+section .btnone{
+    background: black;
+    color: white;
+
+}
+section .btntwo{
+    background:#ffff ;
+    color: #000;
+   
+}
+.btnone:hover{
+    background: #00b894;
+    color: white;
+}
+.btntwo:hover{
+    background:#27AE60;
+    color:#000
+}
+/*.change_content span :after {
+    content: ""; 
+    animation: change_text infinite 10s;
+    color: #00b894;
+}
+@keyframes change_text{
+    0% {
+        content: "Nepal";
+    }
+    20% {
+        content: "kathmandu";
+    }
+    60% {
+        content: "Bagmati";
+    }
+}
+
+}*/
+.change_content::after{
+  content: ' ';
+  position: absolute;
+ /* padding-left: 5px;*/
+  color: #4ef1d1;
+  margin-left: 20px;
+  background: rgba(0, 0, 0, 0);
+  animation: textrotate 5s linear infinite;
+  -webkit-animation: textrotate 5s linear infinite;
+}
+@keyframes textrotate {
+  0%{
+    content: 'Nepal';
+  }
+  50%{
+    content: 'Kathmandu';
+  }
+  100%{
+    content: 'Bagmati';
+  }
+}
